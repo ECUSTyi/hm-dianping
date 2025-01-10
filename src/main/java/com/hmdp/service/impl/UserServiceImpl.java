@@ -82,7 +82,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         }
 
         // 5、保存用户信息到redis中：
-
         // 5.1 随机生成token，作为登录令牌
         String token = UUID.randomUUID().toString(true);
 
